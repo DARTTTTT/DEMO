@@ -124,7 +124,11 @@ public class OLotteryFragment extends OBaseFragment implements View.OnClickListe
                         Log.d("print", "onSuccess:91:   " + response.body());
                         if (!TextUtils.isEmpty(response.body())) {
                             oLotteryEntity = new Gson().fromJson(response.body(), OLotteryEntity.class);
-                            text_count.setText(oLotteryEntity.getData().get(0).getLimit() + "");
+                            if (oLotteryEntity.getData().size()!=0){
+
+                                text_count.setText(oLotteryEntity.getData().get(0).getLimit() + "");
+                            }
+
 
 
                         }
@@ -271,7 +275,8 @@ public class OLotteryFragment extends OBaseFragment implements View.OnClickListe
                 builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        if (oLotteryEntity != null) {
+                        if (oLotteryEntity != null&&oLotteryEntity.getData().size()!=0) {
+
                             int id = oLotteryEntity.getData().get(0).getId();
                             postOpen(id, wheelSurfView);
                         } else {
