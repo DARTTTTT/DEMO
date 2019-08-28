@@ -2,9 +2,9 @@ package com.ltqh.qh.operation.base;
 
 public interface OConstant {
 
-    public static String PANDANEWS_HOST = "https://zy.tigerqh.com";
+    //public static String PANDANEWS_HOST = "https://zy.tigerqh.com";
 
-    // public static String PANDANEWS_HOST = "https://xm.pandaqh.com";
+     public static String PANDANEWS_HOST = "https://xm.pandaqh.com";
 
     // public static String PANDANEWS_HOST = "https://xm.agjnw.com";
 
