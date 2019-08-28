@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_shape_background"
+        android:gravity="center|left"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_20"
+            >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="您当前还未绑定银行卡,为保证您的正常交易,请先绑定银行卡"
+                android:textColor="@color/o_text_3433"
+                android:textSize="17sp" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/o_shape_btn_white"
+                android:padding="10dp"
+                android:text="取消"
+                android:visibility="visible"
+                android:textColor="@color/maincolor"
+                android:textSize="15sp"
+
+                />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/margin_15"
+            android:background="@drawable/o_bg_maincolor"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- </android.support.v7.widget.CardView>-->
+</RelativeLayout>

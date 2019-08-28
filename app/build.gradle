@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.operation.qh"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "1"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME     : applicationId,
+                JPUSH_APPKEY      : "4be5e5bc3b117bb5d3aa86f3", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL     : "developer-default", //暂时填写默认值即可.
+                UMENG_APPKEY_VALUE: "5cece4cb0cafb2a5a8000cf4"//友盟统计
+
+        ]
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', "x86", 'x86_64'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        packagingOptions {
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+        }
+        lintOptions {
+            abortOnError false
+        }
+
+        productFlavors {
+            qh360 {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            yingyongbao {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            huawei {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            xiaomi {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            oppo {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            meizu {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+            xiaoshichang {
+                buildConfigField "String", "QUDAO", '"ltqh"'
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res-night']
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    //okgo
+    implementation 'com.lzy.net:okgo:3.0.4'
+    implementation 'com.lzy.net:okserver:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //日历
+    implementation 'com.necer.ncalendar:ncalendar:2.1.1'
+    //极光
+    implementation 'cn.jiguang.sdk:jpush:3.1.6'
+    // 此处以JPush 3.1.6 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.2.5'
+    // 此处以JCore 1.2.5 版本为例。
+    implementation 'org.jsoup:jsoup:1.11.3'
+    //友盟统计
+    //  implementation 'com.umeng.sdk:common:latest.integration'
+    //  implementation 'com.umeng.sdk:analytics:latest.integration'
+    implementation 'com.umeng.umsdk:analytics:8.0.0'
+    implementation 'com.umeng.umsdk:common:2.0.0'
+    //日历
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    //需要舍弃 耗内存
+    implementation 'com.github.pinguo-zhouwei:MZBannerView:v2.0.2'
+    //androidX 版本使用下面的依赖
+    implementation 'com.github.xiaohaibin:XBanner:1.6.1'
+    implementation 'com.alibaba:fastjson:1.2.35'
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+    // LeanCloud 基础包
+    implementation 'cn.leancloud.android:avoscloud-sdk:4.7.10'
+    //bmob
+    implementation 'cn.bmob.android:bmob-sdk:3.7.3-rc1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.tencent:mmkv:1.0.19'
+    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation files('libs/commons-codec-1.11.jar')
+    //二维码
+    implementation 'com.google.zxing:core:3.3.0'
+    //皮肤包
+    implementation 'skin.support:skin-support:3.1.1'                   // skin-support 基础控件支持
+    implementation 'skin.support:skin-support-design:3.1.1'
+    // skin-support-design material design 控件支持[可选]
+    implementation 'skin.support:skin-support-cardview:3.1.1'
+    // skin-support-cardview CardView 控件支持[可选]
+    implementation 'skin.support:skin-support-constraint-layout:3.1.1'
+    // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+}

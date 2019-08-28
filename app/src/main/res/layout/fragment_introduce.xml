@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line"
+                    android:text="	1.全球主要股指期货合约列表"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="国家或地区	指数期货合约	开设时间	开设交易所
+美国	价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+价值线指数期货(VLF)	1982.2	堪萨斯期货交易所(KCBT)
+加拿大	多伦多50指数期货(Toronto50)	1987.5	伦敦国际金融期货交易所(LIFFE)
+英国	金融时报100指数期货(FTSE100)	1984.5	伦敦国际金融期货交易所(LIFFE)
+法国	法国证券商协会40股指期货(CAC－40)	1988.6	法国期货交易所(MATIF)
+德国	德国股指期货(DAX－30)	1990.9	德国期货交易所(DTB)
+瑞士	瑞士股指期货(SMI)	1990.11
+荷兰	阿姆斯特丹股指期货EOE指数	1988.10	阿姆斯特丹金融交易所(FTA)
+泛欧100指数期货(Eurotop100)	1991.6	荷兰期权交易所(EOE)
+西班牙	西班牙股指期货(IBEX35)	1992.1	西班牙衍生品交易所(MEFFRV)
+瑞典	瑞典股指期货(OMX)	1989.12
+奥地利	奥地利股指期货(ATX)	1992.8
+比利时	比利时股指20期货(BEL 20)	1993.9
+丹麦	丹麦股指期货(KFX)	1989.12
+芬兰	芬兰指数期货(FOX	1988.5
+日本	日经225指数期货(Nikkei 225)	1988.9
+东证综合指数期货(TOPIX)	1988.9	东京证券交易所(TSE)
+新加坡	日经225指数期货(Nikkei 225)	1986.9	新加坡金融期货交易所(SIMEX)
+摩根世界指数期货(NISCI)	1993.3	新加坡金融期货交易所(SIMEX)
+香港	恒生指数期货(HIS)	1986.5	香港期货交易所
+韩国	韩国200指数期货(KOPSI200)	1996.6	韩国期货交易所(KFE)
+台湾	台湾综合指数期货(TX)	1998.7	台湾期货交易所(TAIMEX)
+澳大利亚	普通股指数期货(All Ordinaries)	1983.2	悉尼期货交易所(SFE)
+新西兰	新西兰40指数期货(NZSE 40)	1991.9"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+            <!--2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line2"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line2"
+                    android:text="2.国外常见指数期货合约介绍"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="名称
+SP500
+
+DowJonesIndustrialAverage
+
+NASDAQ 100
+
+FTSE -100
+
+标准普尔500
+指数期货
+
+道琼斯平均工业指数期货
+
+纳斯达克100
+指数期货
+
+英国金融时报
+指数期货
+
+交易所
+
+CME	CBOT	CME	LIFFE
+商品代码
+
+SP	DJ	ND	FTSE- 100
+最小变动价位
+
+0.1点($25)	1点($10)	0.5点($50)	0.5 (5英镑)
+契约价值
+
+$250*SP	$10*DJ	$100*ND	10 英镑* FTSE- 100
+交易月份
+
+三，六，九，十二	三，六，九，十二	三，六，九，十二	三，六，九，十二
+最后交易日
+
+合约月份第三个
+星期四	合约月份第三个星期四	合约月份第三个
+星期四	合约月份第三个
+星期四
+标的名称
+E-mini SP500
+
+E-mini DJ
+
+E-mini NASDAQ 100
+
+Nikkei-225
+
+迷你标普500指数期货
+
+迷你道指期货
+
+迷你纳斯达克指数期货
+
+日经225指数
+
+交易所
+
+CME	CBOT	CME	SIMEX
+商品代码
+
+ES	YM	NQ	SSI
+最小变动价位
+
+0.25点($12.5)	1点($5)	0.5点($10)	5 点( ￥2500)
+契约价值
+
+$50*SP	$5*YM	$20*NQ	￥500 *SSI
+交易月份
+
+三，六，九，十二	三，六，九，十二	三，六，九，十二	三，六，九，十二
+最后交易日
+
+合约月份第三个
+星期四	合约月份第三个
+星期四	合约月份第三个
+星期四	合约月份第二个周五的前一个营业日"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+            <!--3-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line3"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line3"
+                    android:text="3.香港恒生指数期货合约的产生与发展"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="香港恒生指数期货合约交易始于一九八六年五月六日，该股市指数期货合约是根据恒生指数及其四项分类指数:地产、公用事业、金融及工商而定。合约分为四个月份,即当前月、下一月、以及后两个季月,当前为4月,则合约分为4月恒指、5月恒指、6月恒指、9月恒指，4月合约现金交割之后,则合约变化为5月合约、6月合约、9月合约、12月合约，之后循环反复。合约价值则等于合约的现行结算价格乘以五十港币。恒生指数期货合约的产生和发展大致可以分为三个阶段，即香港股指期货的产生及其迅猛发展阶段、体制改革阶段及其稳步发展阶段。
+　　第一阶段：一九八六年五月至一九八七年十月，即总结为指数期货的产生、迅猛发展和交易危机。一九八二年至一九八七年，世界股票价格指数正处于蓬勃发展时机，在世界股指期货大发展的良好背景下，一九八六年五月份，香港期货交易所成功推出恒生指数期货交易。在恒生指数期货合约挂牌上市后的短短一年多时间里，期货交易火爆，发展势头迅猛，当年五月份日均成交量为1,800份，到了一九八七年十月，成交量突破25,000份，一九八七年十月十六日成交量破纪录放大到40,000份。一九八七年十月十九日，美国华尔街股市单日暴跌近23%，并由此引发全球股市重挫的金融风暴，即著名的'黑色星期五'。一九八七年十月中下旬，香港股市同样无法避免历经四天的严重股灾，股指期货出现首次交易危机。由于香港期货交易所应付对手风险能力不足，加之当时期货保证公司保证服务欠缺，恒生指数暴跌420多点，香港期货交易所不得不增加保证金和扩大停板价幅，期货指数迅速跌至停板。很多会员由于大面积亏损需要及时补充履约保证金却无力支付，导致保证金不足以支付结算额，欠款额高达数亿港币。十月二十日，纽约道.琼期指数暴跌，鉴于不少恒生指数期货合约拖欠债务，香港股票交易所及期货交易所宣布休市四天。
+　　第二阶段：香港期货交易所被迫改革。1987年10月，美国股市暴跌引发了全球股灾，香港股市历经四天惨跌，股指期货交易出现严重危机。为了应对当时庞大的保证金不足引发的严重债务风险，特别是为防止日后期货交易可能出现的潜在交割危机，香港期货交易所着手对结算和保证制度进行大刀阔斧改革。
+　　香港期货交易所推出股指期货合约时最早结算任务完全是由结算所承担，结算所管辖会员的买卖，并监控会员可能发生的交易风险；而会员则管辖其客户的买卖，负责监控客户交易风险，会员执行结算所的可靠程序，但并不负有履行其保证的功能或义务，即不能保证客户能支付任何未平仓合约保证金。一九八七年十月出现交割危机之后，结算制度的改革要求提上日程。一九八七年十月二十六日，香港期货交易所作出一个拯救期货市场的决定，即由香港政府出资50%，主要银行和经纪出资50%，筹措一笔二十亿元港币的备用贷款给予香港期货保证公司（之后增至港币四十亿元），增强其抗风险能力，保证香港期货交易所所有期货合约的履行。之后，保证公司动用了约二十亿元港币的备用储备来处理未能履行合约经纪会员的十八亿元未平仓合约。但之后政府规定该笔贷款将通过追讨未履行责任会员欠款及期货合约和所有股票交易的特别征费来偿还。通过征收特别征费偿还交割债务，无形中将该笔拯救贷款转嫁到了投资者身上。
+　　随后期货交易所继续进行了一系列改革，加强其抗风险能力，并且使其监控市场风险的功能得到加强。改革内容主要有以下三点，其一，将会员分为四种等级，只替自己买卖的经纪划为第一类经纪会员，代表自己及交易所会员客户进行交易的经纪划为第二类经纪会员，代表非会员客户进行交易的经纪划为第三类经纪会员，有包销权的经纪则划为第四类经纪会员。交易所依据承受风险的大小相应提高交易经纪会员的股本要求，通过此次改革，每一类经纪会员被要求对其顾客的财务状况进行不定期监察，且会员还负有承受客户可能拖欠保证金的风险。其二，通过改革成立二亿港币的储备基金，代替以前的保证公司，期交所结算公司可以利用该笔基金直接支付经纪会员拖欠的保证金，及时化解市场交易、交割风险。其三，改革的另一结果是对结算所进行重组。为了更严格地保证经纪会员存放发展按金的安全性和流动性，通过此次重组，将结算公司并为期货交易所的附属公司，完成日常交易和交割的结算任务，更便于期货交易所及时控制风险和应对危机。
+　　第三阶段：交易所改革后至今，金融期货市场的规范和发展。经过系列改革，香港期货交易所的交易活动逐渐稳定，投资者重新恢复对股指期货交易的信心。市场体制和各项制度在这个过程中得到完善，市场秩序更加规范，交易量不断上升，并且为我国内地的股指期货建立和日后建设提供了借鉴和可行性经验。
+附：香港恒生指数期货合约
+
+
+相关指数
+
+恒生指数（由恒指服务有限公司编纂，计算及发放）
+合约乘数
+
+每点港币$50.00
+
+
+合约月份
+
+现月，下月，及之后的两个季月（立约成本：被结算公司登记的恒生指数期货合约的价格（以完整指数点计算）
+立约价值
+
+立约成本乘以合约乘数
+最低格波幅
+
+最低格波幅 一个指数点
+持仓限额
+
+无论长仓或短仓，以恒生指数期货、恒生指数期权及小型恒生指数期货所有合约月份持仓合共delta 10000为限，并且在任何情况下，小型恒生指数期货的长仓或短仓都不能超过delta2000 ，计算持仓限额时，每张小型恒生指数期货的仓位delta为0.2。
+开市前时段
+
+(香港时间) 上午九时十五分至上午九时四十五分(第一节买卖)及下午二时正至二时三十分 (第二节买卖)
+交易时间
+
+(香港时间)上午九时四十五分至中午十二时三十分（第一节买卖） 下午二时三十分至下午四时十五分（第二节买卖）
+最后交易日的交易时间
+
+(香港时间)9：45~12：30（第一节买卖）、14：30~16：00（第二节买卖）由于现货市场的收市时间有可能会随时更改，期货市场的收市时间必须根据现货市场收市时间的改变而自动做出相应调整。
+交易方法
+
+电子自动化交易
+最后交易日
+
+该月最后第二个营业日
+结算方法
+
+以现金结算
+最后结算
+
+恒生指数期合约的最后结算由结算公司决定，并采用恒生指数在最后交易日每五分钟所报指数点的平均数为依归，下调至最接近的整数指数点。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--4-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line4"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line4"
+                    android:text="4、日本股指期货的产生与发展"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="日本股指期货的发展经历了较为明显的三个阶段：
+　　第一阶段：80年代初期到1987年，股指期货在外界因素的推动下从无到有的初步试验阶段。日本于80年代初期即已开放了其证券市场，允许境外投资者投资境内股市。但是，其股指期货合约却首先出现在海外，1986年9月3日，日经225指数期货在新加坡金融期货交易所（SIMEX）交易。按照日本当时的证券交易法规定，证券投资者从事期货交易被禁止。所以，当时的日本证券市场并不具备推出股指期货交易的法律条件。而且，按照当时的证券交易法，日本国内的基金是被禁止投资SIMEX的日经225指数的，只有美国和欧洲的机构投资者利用SIMEX的日经225股指期货合约对其投资于日本的股票进行套期保值。本国的机构投资者明显处于不利位置。基于这样的原因，1987年6月9日，日本推出了第一支股票指数期货合约---50种股票期货合约，受当时证券交易法禁止现金交割的限制，50种股票期货合约采取现货交割方式，以股票指数所代表的一揽子股票作为交割标的。　
+　第二阶段：1988年到1992年逐步完善的过渡阶段。这一阶段，通过修改和制订法律，国内股指期货市场逐步走上正轨。50种股指期货刚刚推出的前几个月，交易发展缓慢，直到1987年股市暴跌后交易量迅速发展起来。1987年10月20日上午，日本证券市场无法开始交易，卖盘远大于买盘，由于涨跌停板的限制，交易刚开始即达到跌停板。由于当时50种股票期货合约实行现货交割，所以，境内投资者也无法实施股指期货交易。而在SIMEX交易的境外投资者却能够继续交易期货合约。受此事件影响，1988年日本金融市场管理当局批准了大阪证券交易所关于进行日经指数期货交易的申请。1988年5月，日本修改证券交易法，允许股票指数和期权进行现金交割，当年9月大阪证券交易所开始了日经225指数期货交易。1992年3月，大阪证券交易所50种股票期货停止了交易。
+　　第三阶段：对股票指数进行修改，股指期货市场走向成熟。由于日经225指数采用第一批上市的225种股票，以股价简单平均的形式进行指数化。针对这样的情况，大阪证券交易所根据大藏省指示，开发出了新的对现货市场影响小的日经300指数期货以取代日经225，并于1994年2月14日起开始交易。此后，日本股指期货市场便正式走向成熟。　
+新加坡国际金融交易所（SIMEX）首开先河，于1986年推出了日本的日经225指数期货交易，并获得成功。而日本国内在两年以后才由大贩证券交易所（OSE）推出日经225股指期货交易。1990年，美国的芝加哥商业交易所（CME）也推出日经225指数期货交易，形成三家共同交易日经225指数的局面。而在竞争中，由于新加坡推出较早已形成一定优势，因此一直保持领先地位。直到1995年初英国皇家巴林银行期货交易员尼克里森因在投机日经225指数中的违规操作而导致巴林银行倒闭事件发生后，市场对SIMEX的日经225指数产生了信心危机，资金才又开始回流日本市场，OSE才趁机夺回了主导权。从某种意义上说，巴林事件的发生也是OSE与SIMEX市场竞争的结果。为了争夺OSE的市场份额，SIMEX不惜放松对市场的监控，在巴林银行持仓已明显偏高的情况下，不做及时的处理，直接导致了巴林银行的巨额亏损。如果SIMEX采取有效办法展开市场竞争，并充分利用自己的优势，那幺新加坡完全有可能在日经225指数期货市场一直占据主导地位。但是总的来说，日本在本土推进日经225股指期货交易时长期还是处于尴尬地位。从2005年的数据来看，全球日经225指数期货市场中，日本本土只占有55.05%的份额。2005年新加坡的日经225指数期货价格严重影响着日本本土的日经225指数价格，新加坡的日经225拥有了很大程度的定价权.
+　
+　　附：日经225指数期货合约　
+　
+交易所
+
+大阪证券交易所(OSE)
+合约大小
+
+1000倍x日经225股价指数期货
+
+代号
+
+JNI
+
+合约月份
+
+三月、六月、九月、十二月之中最近的五个月份
+最小跳动点
+
+10点 = 10,000日圆
+时间(台湾)
+
+上午8:00—10:00 下午11:30—14:10半日8:00—10:10
+保证金
+
+采取SPAN保证金制度(请参考本公司之通知)
+最后交易日
+
+各合约月份第二个星期五之前一个交易日(假日提前一天)
+最后结算价
+
+依最后交易日的翌日早上，日经225指数的225支成分股开盘价来计算。
+停板幅度
+
+2万点以下1,000点;
+2万点以上—3万点以下1,500点;
+3万点以上—4万点以下2,000点;
+4万点以上2,500点"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--5-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line5"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line5"
+                    android:text="5、韩国股指衍生品市场经验探索"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="（1）、韩国股指衍生品交易概况
+　　韩国证券期货交易所期货市场分部主要交易五类产品：利率产品、指数产品、股票产品、外汇产品和商品产品。指数产品有三个品种：Kospi200期货、Kospi200期权和Kostaq50指数期货、Kostaq50指数期权。其中，成交量最大的是Kospi200期权。2005年，Kospi200期权的成交量比上年增长0.54％，达到年交易量25亿3520万张合约（Kospi200期权合约在2003年曾达到28亿张合约的历史高点），是全球成交量最大的期货/期权合约。而且，其成交量远远超过成交量第二大的合约（CME欧元期货合约），是后者成交量的5倍还多。Kospi200期权的成交量也因此占到韩国证券期货交易所去年总成交量的97.77％，而其他交易品种的成交量加总仅占该交易所的2.23％。
+　　根据美国期货业协会的数据，从全球期货和期权交易所的成交量来看，韩国证券期货交易所去年成交量达到2593088445张合约，而欧洲最大的交易所Eurex的全年成交量不过1248748152张，不到韩国证券期货交易所期货/期权成交量的一半。这很大程度上要归功于Kospi200期权合约的成功。以下笔者从韩国股指衍生品的产生和发展、合约设计、市场投资者结构以及市场投资氛围等多角度发掘该品种取得巨大成功的原因。
+　　（2）、韩国股指衍生品的发展路径
+　　Kospi200指数是韩国综合股票价格指数（Korean Composite Stock Price Index）的缩写。　　Kospi200指数包含韩国股票交易所上市交易的最大且最具流动性的前200只股票。该指数以市值为权重，因此，市值相对大的股票对市场Kospi指数的影响也较大。Kospi200指数的推出，是作为股价指数期货和期权的交易对象而开发的股价指数，1994年6月15日开始运行，以1990年1月3日为基期计算。
+　　为了进行期货交易，规范市场发展，1995年12月，韩国政府开始着手制订《期货交易法》(FTA)，并于1996年6月正式颁布。1996年5月3日，韩国证券交易所正式开始KOSPI200指数期货交易，1997年6月又推出了KOSPI200指数期权交易。按照《期货交易法》，期货交易应该在期货交易所进行，但是由于牵涉利益重新分配，直到2004年，在韩国证券交易所进行的KOSPI200指数期货、期权交易才被移至KOFEX（韩国期货交易所）。在2005年韩国交易所又进行了一个规模空前的整合运动，将韩国证券交易所、创业板市场（Kosdaq）以及期货交易所合并成为一个韩国证券期货交易所。2005年1月19日，韩国证券期货交易所正式成立。该交易所由五大部门组成，分别是行政后台服务部、股票市场分部、Kosdaq市场分部、期货市场分部、市场监管分部。其中，期货市场分部主管各种衍生品交易。
+　　自1997年推出Kospi200期权合约之后，该合约的交易量年年以超常规的发展速度发展壮大。根据FIA的历年报告数据，Kospi200的期货/期权的合约交易量如下图所示。2003年之前Kospi200期权合约一直保持着高速的发展，这两年则是处于高位平衡阶段。期货合约相比期权合约交易量要小，但是2004年之前均处于世界期货合约交易量的前20名内，成绩斐然。
+　　（3）、韩国股指期货期权的发展环境
+　　2001--2005年间韩国股市走势情况如何，对证券公司、个人投资者的交易量存在如何的影响呢？从1997年开始，韩国指数波幅巨大，2003年KOSPI 200股指期货交易量达到历史高位（如下图所示），而现货股票市场中，恰恰是适逢股市下跌低迷时期，股市的动荡和低迷激发投资者运用股指期货对股票投资进行套期保值以及通过股指期货进行卖空投机以弥补现货市场不便卖空获利的缺点，对股指期货的繁荣和发展也起到了至关重要的推动作用。
+6、台湾地区金融期货期权市场的发展简况
+近年来，亚太地区一些新兴股指期货市场发展风起云涌。继新加坡、韩国之后，台湾期货交易所荣获了《亚洲风险》(《Asia Risk》)杂志2004年'亚洲风云交易所'的称号。
+　　台湾期货市场历史相当短暂。1997年，在芝加哥商业交易所CME与新加坡交易所SGX-DT推出台湾指数期货之后，为了避免岛外交易岛内股指期货对台湾金融市场产生不可意料的影响，台湾当局加快了岛内期货市场的建设。1997年9月9日，台湾期货交易所成立。1998年7月21日推出了第一个以台湾证交所加权综合指数为标的的股指期货合约。在短短的七年时间内，台湾期货市场发展十分迅速，2004年台湾期交所所有合约成交量达59,146,376张，是1999年的60倍。成交量的飞速发展、产品的不断创新以及制度的不断变革使台湾期交所荣获此次殊荣。
+　　20世纪90年代，我国台湾地区为了积极推动各项自由化、国际化的金融政策，促进经济发展，将期货市场建设列为重点一环。1997年美国CME与新加坡交易所SGX-DT推出台指期货加速了台湾期货市场的建设进程。
+　　目前在台湾期货交易所上市交易的品种共有9个。分别是台湾证交所股价指数期货、电子类股指价指数期货、金融保险类股价指数期货、小型台股指数期货、台股指数期权、股票期权、台湾50指数期货、十年期公债期货、三十天期利率期货。如表1所示。整个市场的成交量从1999年的1,077,672张增长到2004年的59,146,376张，增长近60倍！如图1所示。开户数由1999年的22.6万户增长到2004年前11个月的100.5万户，如图2所示。表2是各商品的日均成交情况。从表中可以看出，目前成交最活跃的是台指期权，其次是台指期货。
+　　台湾期货交易所上市品种
+商品名称
+
+时间
+
+电子类股价指数期货合约
+
+1999/7/21
+
+金融保险类股价指数期货合约
+
+1999/7/21
+
+小型台股指数期货合约
+
+2001/4/9
+
+台股指数期权合约
+
+2001/12/24
+
+股票指数期权契约
+
+2003/1/20
+
+台湾 50 指数期货合约
+
+2003/6/30
+
+十年期公债期货
+
+2004/1/2
+
+三十天期利率期货
+
+2004/5/31"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--6-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line6"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line6"
+                    android:text="6.沪深300指数是如何编制的？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="2005年4月8日，沪深两交易所正式向市场发布沪深300指数。以2004年12月31日为基期，基点为1000点。同年8月25日由沪深两交易所共同出资的中证指数有限公司成立，沪深300指数由中证指数限公司管理。
+　　（一）指数选样
+　　　　1、指数成份股的数量：300只
+　　　　2、指数成份股的选样方法
+　　（1）选样空间
+　　　　上市交易时间超过一个季度；
+　　　　非ST、*ST股票，非暂停上市股票；
+　　　　公司经营状况良好，最近一年无重大违法违规事件、财务报告无重大问题；
+　　　　股票价格无明显的异常波动或市场操纵；
+　　　　剔除其他经专家认定不能进入指数的股票
+　　（2）选样标准
+　　　　选取规模大、流动性好的股票作为样本股。
+　　（3）选样方法
+　　　　对样本空间股票在最近一年（新股为上市以来）的日均成交金额由高到低排名，剔除排名后50%的股票，然后对剩余股票按照日均总市值由高到低进行排名，选取排名在前300名的股票作为样本股。
+　　（二）指数计算
+　　　　指数以调整股本为权重，采用派许加权综合价格指数公式进行计算。其中，调整股本根据分级靠档方法获得。
+
+举例如下：某股票流通股比例（流通股本/总股本）为7%，低于10%，则采用流通股本为权数；某股票流通比例为35%，落在区间(30，40]对应的加权比例为40%，则将总股本的40%作为权数。
+　　（三）指数修正
+　　　　沪深300指数采用‘除数修正法’修正。当样本股名单、股本结构发生变化或样本股的调整市值出现非交易因素的变动时，采用'除数修正法'修正原固定除数，以保证指数的连续性。
+　　　　修正公式为： 修正前的调整市值/原 除 数=修正后的调整市值/新除数
+　　　　其中，修正后的调整市值＝修正前的调整市值+新增（减）调整市值；由此公式得出新除数（即修正后的除数，又称新基期），并据此计算指数。
+　　需要修正的情况包括：
+　　　　1、除息：凡有样本股除息（分红派息），指数不予修正，任其自然回落。
+　　　　2、除权：凡有样本股送股或配股，在样本股的除权基准日前修正指数。修正后调整市值＝
+　　除权报价×除权后的股本数+修正前调整市值（不含除权股票）。
+　　　　3、停牌：当某一样本股停牌，取其最后成交价计算指数，直至复牌。
+　　　　4、摘牌：凡有样本股摘牌（终止交易），在其摘牌日前进行指数修正。
+　　　　5、股本变动：凡有样本股发生其他股本变动（如增发新股、配股上市、内部职工股上市引起的流通股本增加等），在样本股的股本变动日前修正指数。
+　　　　6、停市：部分样本股停市时，指数照常计算；全部样本股停市时，指数停止计算。
+　　（四）成份股的定期调整
+　　　　1、指数成份股原则上每半年调整一次，一般为1月初和7月初实施调整，调整方案提前两周公布。
+　　　　2、每次调整的比例不超过10%。样本调整设置缓冲区，排名在240名内的新样本优先进入，排名在360名之前的老样本优先保留。
+　　　　3、 最近一次财务报告亏损的股票原则上不进入新选样本，除非该股票影响指数的代表性。
+　　　　4、当样本股公司退市时，自退市日起，从指数样本中剔除，由过去最近一次指数定期调整时的候选样本中排名最高的尚未调入指数的股票替代。
+　　　　5、最新规则调整：符合样本空间条件、且总市值（不含境外上市股份）排名在沪深市场前10位的新发行股票，启用快速进入指数的规则，即在其上市第十个交易日结束后进入指数，同时剔除原指数样本中最近一年日均总市值排名最末的股票。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+            <!--7-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line7"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line7"
+                    android:text="7、合约大小是多少？什么是合约乘数？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="沪深300指数期货的合约面值为当时沪深300指数期货报价点位乘以合约乘数。合约乘数是指每个指数点对应的人民币金额。目前设计合约乘数为100元/点。如果当时指数期货报价为1400点，那么沪深300指数期货合约面值为1400点＊100元/点＝140,000元。
+10、沪深300指数期货收取多少保证金？
+目前设计沪深300指数期货的交易所收取的保证金水平为合约面值的8%。交易所根据市场风险情况有权进行必要的调整。按照这一比例，如果沪深300指数期货的结算价为1400点，那么第二天交易所收取的每张合约保证金为1400点＊100元/点＊8%=1.12万元。投资者向会员缴纳的交易保证金会在交易所规定的基础上向上浮动。
+11、合约有涨跌停板吗？
+　沪深 300指数期货的涨跌停板为前一交易日结算价的正负10%。合约最后交易日不设涨跌停板。因为最后交易日不是以期货价格的平均价作为结算价，而是以现货指数的平均作为结算价。必须要保证指数期货的价格能够和指数现货趋同，因此不设涨跌停板。
+12、什么是熔断机制？
+熔断机制是指对某一合约在达到涨跌停板之前，设置一个熔断价格，使合约买卖报价在一段时间内只能在这一价格范围内交易。沪深300指数期货合约的熔断价格为前一交易日结算价的正负6%。当市场价格触及 6%，并持续一分钟，熔断机制启动。在随后的十分钟内，卖买申报价格只能在 6%之内，并继续成交。超过6%的申报会被拒绝。十分钟后，价格限制放大到 10%。　　设置熔断机制的目的是让投资者在价格发生突然变化的时候有一个冷静期，防止作出过度反应。
+13、每日的开盘价、收盘价是如何确定的？
+开盘价是指合约开市前五分钟内经集合竞价产生的成交价格。如果集合竞价未产生价格的，以当日第一笔成交价为当日开盘价。如果当日该合约全天无成交，以昨日结算价作为当日开盘价。收盘价是指合约当日交易的最后一笔成交价格。如果当日该合约全天无成交，则以开盘价作为当日收盘价。
+14、每日结算价是如何确定的？
+当日结算价是指某一期货合约最后一小时成交量的加权平均价。最后一小时无成交且价格在涨/跌停板上的，取停板价格作为当日结算价。最后一小时无成交且价格不在涨/跌停板上的，取前一小时成交量加权平均价。该时段仍无成交的，则再往前推一小时。以此类推。交易时间不足一小时的，则取全时段成交量加权平均价。
+15、最后结算价是如何确定的？为什么不用收盘价呢？
+最后结算价是最后交易日现货指数最后一小时所有指数点的算术平均价。在国际市场上有一些合约是采用现货指数收盘价作最后结算价的。但由于现货指数收盘价很容易受到操纵，因此为了防止操纵，国际市场上大部分股指期货合约采用一段时间的平均价。
+16、什么是合约的最小变动单位？
+股指期货合约的最小变动单位是指合约报价时允许报出的小数点后最小有效点位数。沪深 300 指数期货的最小变动单位为0.1点，按每点100元计算，最小价格变动相当于合约价值变动10元。
+17、合约挂牌几个月份？
+沪深300指数期货同时挂牌四个月份合约。分别是当月、下月及随后的两个季月月份合约。如当月月份为7月，则下月合约为 8月，季月合约为9月与12月。表示方式为CN0607、CN0608、CN0609、CN0612。其中CN为合约代码，06表示2006年，07表示7月份合约。
+18、合约的最后交易日是哪一天？
+合约的最后交易日为每月的最后一个工作日。如7月份合约，交易所最后一个工作日为31日，则该合约最后交易日为7月31日。同时最后交易日也是最后结算日。这天收盘后交易所将根据交割结算价进行现金结算。
+19、股指期货每天交易时间和股票市场一样吗？
+沪深300指数期货早上9点15分开盘，比股票市场早15分钟。9点10分到9点15分为集合竞价时间。下午收盘为3点15分，比股票市场晚15分钟。最后交易日下午收盘时，到期月份合约收盘与股票市场收盘时间一致，其它月份合约仍然在3点15分收盘。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

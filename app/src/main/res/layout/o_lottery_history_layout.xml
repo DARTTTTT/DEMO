@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_menu_height"
+        android:background="@drawable/new_order_bg_white"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/text_xuhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="序号"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/o_text_hint_color"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中奖商品"
+                android:layout_marginRight="@dimen/margin_15"
+                android:textColor="@color/o_text_hint_color"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+b
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="序号"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/o_text_hint_color"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/text_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已派发"
+                android:textColor="@color/o_text_hint_color"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:layout_marginRight="@dimen/margin_15"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@color/o_line"
+        android:visibility="visible" />
+</LinearLayout>

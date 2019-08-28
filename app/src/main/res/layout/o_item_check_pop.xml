@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_shape_background"
+        android:gravity="center|left"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="首次充值用户验证"
+                android:textColor="@color/o_text_3433"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/text_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_5"
+                android:text="返回"
+                android:textColor="@color/o_text_3433"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入真实姓名"
+            android:textSize="15sp"
+            android:textColorHint="@color/o_text_636e"
+            android:textColor="@color/o_text_3433"
+            android:layout_margin="@dimen/margin_15"
+            android:maxLines="1"
+            android:maxLength="16"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示:"
+            android:textColor="@color/redcolor"
+            android:textSize="13sp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o_text_tip"
+            android:textColor="@color/o_text_001c"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            />
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/margin_15"
+            android:background="@drawable/o_bg_maincolor"
+            android:padding="10dp"
+            android:text="提交验证"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+    <!-- </android.support.v7.widget.CardView>-->
+</RelativeLayout>

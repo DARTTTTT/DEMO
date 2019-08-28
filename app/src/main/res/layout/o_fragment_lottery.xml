@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheelSurfView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/o_xingji_bg"
+    android:orientation="vertical"
+
+    >
+
+    <com.ltqh.qh.view.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginRight="@dimen/margin"
+                            android:layout_marginBottom="@dimen/margin"
+                            android:background="@drawable/o_lottery_blue_halftran"
+                            android:orientation="vertical">
+
+
+                            <!--通告-->
+                            <LinearLayout
+                                android:id="@+id/layout_report"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="50dp"
+                                android:background="@drawable/o_shape_lottery_white"
+                                android:orientation="horizontal">
+
+
+                                <TextSwitcher
+                                    android:id="@+id/ts_news"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_weight="1"
+                                    android:inAnimation="@anim/slide_in_from_bottom"
+                                    android:outAnimation="@anim/slide_out_to_top" />
+
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/margin"
+                                    android:src="@mipmap/arrow"
+                                    android:visibility="gone"
+
+                                    />
+
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/text_red_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_15"
+                                android:text="我的红包:500"
+                                android:textColor="@color/o_text_f5fa"
+                                android:textSize="17sp" />
+
+
+                            <!--自定义方式-->
+                            <com.ltqh.qh.view.WheelSurfView
+                                android:id="@+id/wheelSurfView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="@dimen/margin_20"
+                                android:layout_weight="1"
+                                wheelSurfView:typenum="-1">
+
+                            </com.ltqh.qh.view.WheelSurfView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="@dimen/margin_20"
+                                android:layout_marginRight="50dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:background="@drawable/o_shape_yellow"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="今天剩余"
+                                    android:textColor="@color/o_text_3433"
+                                    android:textSize="18sp"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/text_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textColor="@color/o_text_ff6c"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="次抽奖机会"
+                                    android:textColor="@color/o_text_3433"
+                                    android:textSize="18sp"
+
+                                    />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text_history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="中奖纪录"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:drawableRight="@mipmap/arrow"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_15"
+                                android:layout_marginBottom="@dimen/margin_20"
+                                />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/o_lottery_title" />
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动内容"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:paddingRight="@dimen/margin"
+                        android:paddingLeft="@dimen/margin"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:layout_gravity="center"
+                        android:background="@drawable/o_lottery_blue_title"
+                        android:layout_marginTop="@dimen/margin_20"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/o_lottery_blue_halftran"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="积分抽: 会员每次使用50红包可以参与一次抽奖"
+                            android:textSize="15sp"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_marginRight="@dimen/margin"
+                            android:textColor="@color/white"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="交易送: 实盘交易标准模式满5手可获得抽奖一次,例如:XX会员交易标准模式10手可以免费获得2次抽奖机会"
+                            android:textSize="15sp"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:layout_marginRight="@dimen/margin"
+                            android:layout_marginLeft="@dimen/margin"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:textColor="@color/white"
+                            />
+
+
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动规则"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:paddingRight="@dimen/margin"
+                        android:paddingLeft="@dimen/margin"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:layout_gravity="center"
+                        android:background="@drawable/o_lottery_blue_title"
+                        android:layout_marginTop="@dimen/margin"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/o_lottery_blue_halftran"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/o_lottery_one"
+                            android:textSize="15sp"
+                            android:drawableLeft="@mipmap/o_img_one"
+                            android:layout_margin="@dimen/margin"
+                            android:textColor="@color/white"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/o_lottery_two"
+                            android:textSize="15sp"
+                            android:drawableLeft="@mipmap/o_img_two"
+                            android:layout_margin="@dimen/margin"
+                            android:textColor="@color/white"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/o_lottery_three"
+                            android:textSize="15sp"
+                            android:drawableLeft="@mipmap/o_img_three"
+                            android:layout_margin="@dimen/margin"
+                            android:textColor="@color/white"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/o_lottery_four"
+                            android:textSize="15sp"
+                            android:drawableLeft="@mipmap/o_img_four"
+                            android:layout_margin="@dimen/margin"
+                            android:textColor="@color/white"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </com.ltqh.qh.view.MyScrollView>
+
+    <!--tab-->
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@mipmap/super_back" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="星际大转盘"
+                android:textColor="@color/white"
+                android:textSize="@dimen/o_title_size"
+
+                />
+
+            <TextView
+                android:id="@+id/text_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="去交易"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/maincolor"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:id="@+id/img_back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@mipmap/super_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="星际大转盘"
+                android:textColor="@color/white"
+                android:textSize="@dimen/o_title_size"
+
+                />
+
+            <TextView
+                android:id="@+id/text_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:text="去交易"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

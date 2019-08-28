@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- <android.support.v7.widget.CardView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="@dimen/margin"
+         android:layout_marginRight="@dimen/margin"
+         android:layout_marginTop="5dp"
+         app:cardCornerRadius="3dp"
+         app:cardElevation="@dimen/cardelevation"
+         app:cardPreventCornerOverlap="true"
+         app:cardUseCompatPadding="true">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_weight="1"
+        android:background="@drawable/new_order_bg_white"
+        android:orientation="horizontal">
+
+        <com.ltqh.qh.view.XCRoundRectImageView
+            android:id="@+id/img_bg"
+            android:layout_width="86dp"
+            android:layout_height="116dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_15"
+
+            android:scaleType="centerCrop"
+            android:src="@mipmap/book_banner" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="梦里花落知多少"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/text_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_title"
+                    android:layout_marginTop="10dp"
+                    android:enabled="true"
+                    android:maxLines="3"
+
+                    android:text="中国文学经典 好书 好书推荐 爱情 经典散文推荐 "
+                    android:textColor="#FFCCCCCC"
+                    android:textSize="15sp"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/text_catalog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/new_order_bg_mainclor"
+                        android:enabled="true"
+                        android:maxLines="3"
+                        android:layout_alignParentBottom="true"
+                        android:text="中国文学 散文"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/text_readcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:enabled="true"
+                        android:maxLines="3"
+                        android:text="6623人已买"
+                        android:textColor="#FFCCCCCC"
+
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@color/home_line"
+        android:visibility="visible" />
+
+
+</LinearLayout>

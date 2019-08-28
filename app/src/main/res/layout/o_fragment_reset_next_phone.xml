@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/new_order_bg_white"
+            android:orientation="vertical"
+            android:visibility="visible"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/layout_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edit_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="请输入新手机号码"
+                    android:inputType="numberSigned"
+                    android:maxLength="11"
+                    android:padding="8dp"
+                    android:textColor="@color/o_text_3433"
+                    android:textColorHint="@color/o_text_hint_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edit_imgcode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入图片验证码"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/o_text_3433"
+                    android:textColorHint="@color/o_text_hint_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_code"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="@dimen/margin"
+                    android:src="@mipmap/o_try" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edit_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:padding="8dp"
+                    android:textColor="@color/o_text_3433"
+                    android:textColorHint="@color/o_text_hint_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_getcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="发送验证码"
+                    android:textColor="@color/maincolor" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:background="@drawable/new_order_bg_mainclor"
+            android:padding="10dp"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

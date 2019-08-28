@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/o_bar_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/o_superback_deep" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置止盈止损"
+            android:textColor="@color/o_text_3433"
+            android:textSize="@dimen/o_title_size"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/o_line"
+        android:visibility="visible" />
+
+    <com.ltqh.qh.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="----"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text_volum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_toRightOf="@+id/text_name"
+                    android:text="--手"
+                    android:textColor="@color/o_text6f8c"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:id="@+id/text_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:text="----元"
+                    android:textColor="@color/redcolor"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="止盈金额: "
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/text_stopprofit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="----"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="元"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin">
+
+                    <TextView
+                        android:id="@+id/min_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="----元"
+                        android:textColor="@color/redcolor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/max_profit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:text="----元"
+                        android:textColor="@color/redcolor"
+                        android:textSize="15sp"
+
+                        />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekbar_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:thumb="@mipmap/o_red_bar" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="止损金额: "
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/text_stoploss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="----"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="元"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin">
+
+                    <TextView
+                        android:id="@+id/min_loss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="----元"
+                        android:textColor="@color/redcolor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/max_loss"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:text="----元"
+                        android:textColor="@color/redcolor"
+                        android:textSize="15sp"
+
+                        />
+                </RelativeLayout>
+
+                <SeekBar
+                    android:id="@+id/seekbar_loss"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+
+                    android:thumb="@mipmap/o_green_bar" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:background="@color/o_market_bg" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/o_bg_maincolor"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示"
+                android:textColor="@color/o_text_second_color"
+                android:textSize="15sp"
+                android:layout_margin="@dimen/margin_15"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="止盈金额"
+                android:textColor="@color/o_text_second_color"
+                android:textSize="14sp"
+                android:layout_marginLeft="@dimen/margin_15"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当盈利多于等于该金额之后,系统自动平仓"
+                android:textColor="@color/o_text_second_color"
+                android:textSize="14sp"
+                android:layout_marginLeft="@dimen/margin_15"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="止损金额"
+                android:textColor="@color/o_text_second_color"
+                android:textSize="14sp"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当亏损多于等于该金额之后,系统自动平仓"
+                android:textColor="@color/o_text_second_color"
+                android:textSize="14sp"
+                android:layout_marginLeft="@dimen/margin_15"
+                />
+
+        </LinearLayout>
+
+
+    </com.ltqh.qh.view.MyScrollView>
+
+
+</LinearLayout>

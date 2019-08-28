@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary_night">#ffffff</color>
+    <color name="colorPrimaryDark_night">#303F9F</color>
+    <color name="colorAccent_night">#5576F7</color>
+    <color name="bar_color_night">#8A5DED</color>
+
+    <color name="maincolor_night">#5576F7</color>
+    <color name="tranmaincolor_night">#AEBCF3</color>
+
+    <color name="deepmaincolor_night">#6320DE</color>
+
+    <color name="stock_index_red_night">#E83A3A</color>
+    <color name="stock_index_green_night">#279D1B</color>
+    <color name="place_holder_night">#e6e6e6</color>
+
+
+    <color name="tab_color_night">#242424</color>
+    <color name="tab_color_normal_night">#999999</color>
+
+    <color name="redcolor_night">#FF566C</color>
+    <color name="greencolor_night">#0FBD97</color>
+    <color name="second_color_night">#FF333333</color>
+
+    <color name="home_line_night">#E0E0E0</color>
+    <color name="text_maincolor_night">#2E3546</color>
+    <color name="text_secondcolor_night">#FF999999</color>
+
+    <color name="text_notice_night">#243C54</color>
+
+    <color name="half_transparent_black_night">#aa434749</color>
+    <color name="half_transparent_white_night">#4DFFFFFF</color>
+
+    <color name="gray0_night">#EDEBEB</color>
+    <color name="purple01_night">#9933CC</color>
+
+    <color name="white_night">#ffffff</color>
+    <color name="black_night">#000000</color>
+    <color name="background_maincolor_night">#F8F8F8</color>
+    <color name="text_1A_night">#1A1A1A</color>
+    <color name="text_4D_night">#4D4D4D</color>
+
+    <color name="cardview_dark_background_night">#FF424242</color>
+    <color name="cardview_light_background_night">#FFFFFFFF</color>
+    <color name="cardview_shadow_end_color_night">#03000000</color>
+    <color name="cardview_shadow_start_color_night">#37000000</color>
+    <color name="text_66_night">#666666</color>
+    <color name="text_c2_night">#C2C2C2</color>
+    <color name="radio_back_color_night">#FF1C2242</color>
+    <color name="stock_bg_color_night">#FF1C2242</color>
+    <color name="transparent_night">#00000000</color>
+    <color name="color_fc_night">#FCFCFC</color>
+    <color name="text_login_tab_night">#B2B2BA</color>
+    <color name="o_line_user_night">#959DAE</color>
+    <color name="o_text_second_color_night">#959DAE</color>
+    <color name="o_text_maincolor_night">#343348</color>
+    <color name="o_light_maincolor_night">#2299F1</color>
+    <color name="o_text_shezhi_night">#797E89</color>
+    <color name="o_text_info_night">#343348</color>
+    <color name="o_text_b2b6c1_night">#B2B6C1</color>
+    <color name="o_text_hint_color_night">#677085</color>
+    <color name="o_text_5c5e76_night">#5C5E76</color>
+    <color name="o_text_3433_night">#B2B6C1</color>
+    <color name="o_market_gray_night">#B2B6C1</color>
+    <color name="o_text_8289_night">#82899C</color>
+    <color name="o_text_chichang_night">#B4B7BF</color>
+    <color name="o_text_f77_night">#F77406</color>
+    <color name="o_text_ff56_night">#FF566C</color>
+    <color name="o_text6f8c_night">#6F8CFF</color>
+    <color name="o_text_1292_night">#1292F0</color>
+    <color name="o_text_7d85_night">#7D8596</color>
+    <color name="o_text_636e_night">#636E7F</color>
+    <color name="o_text_ec49_night">#EC4949</color>
+    <color name="o_text_ec40_night">#EC4040</color>
+    <color name="o_text_6770_night">#72788A</color>
+    <color name="o_text_b3ba_night">#B3BAC8</color>
+    <color name="o_text_ffef_night">#FFEF5A</color>
+    <color name="o_text_ff00_night">#FF000C</color>
+    <color name="o_text_4960_night">#4960cd</color>
+    <color name="o_text_3c3f_night">#3C3F4F</color>
+    <color name="o_text_3red_night">#07EB3D3D</color>
+    <color name="o_text_3green_night">#07009C41</color>
+
+    <color name="o_bar_white_night">#1F202B</color>
+    <color name="o_market_bg_night">#13141B</color>
+    <color name="o_line_night">#13141B</color>
+    <color name="o_text_2d2ef_night">#B2B6C1</color>
+    <color name="o_bar_f0f1_night">#2A2B35</color>
+    <color name="o_text_001c_night">#B2B6C1</color>
+    <color name="o_f8f3_night">#0FEB3D3D</color>
+    <color name="o_f0f6_night">#0F009C41</color>
+    <color name="o_text_3433_white_night">#ffffff</color>
+    <color name="o_text_959d_night">#B2B6C1</color>
+    <color name="o_ebec_night">#13141B</color>
+    <color name="o_807d_night">#807DFC</color>
+    <color name="o_text_dede_night">#dedede</color>
+
+</resources>

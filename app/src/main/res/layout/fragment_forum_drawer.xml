@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+<!--要打开抽屉模式直接更改布局就ok-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_group"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@mipmap/super_back"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@mipmap/icon_menu"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_0"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_switcher_left_white"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="发现"
+                    android:textColor="@color/sel_switcher_market"
+                    android:textSize="@dimen/radio_textsize"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_switcher_right_white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="圈子"
+                    android:textColor="@color/sel_switcher_market"
+                    android:textSize="@dimen/radio_textsize"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="快讯"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/layout_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+
+                >
+
+                <ImageView
+                    android:id="@+id/img_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="发帖"
+                    android:textColor="@color/maincolor" />
+
+            </LinearLayout>
+
+            <com.ltqh.qh.view.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:src="@mipmap/user_icon" />
+
+            <TextView
+                android:id="@+id/text_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_head"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="gone"
+
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/home_line"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/layout_fragment_containter"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_ketang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:drawableTop="@mipmap/home_icon_xuetang"
+            android:gravity="center"
+            android:text="投资课堂"
+            android:textColor="@color/text_maincolor"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/home_line"
+
+            android:visibility="visible"
+
+            />
+
+        <TextView
+            android:id="@+id/text_gongju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:drawableTop="@mipmap/home_icon_quanzi"
+            android:gravity="center"
+            android:text="工具换算"
+            android:textColor="@color/text_maincolor"
+            android:textSize="12sp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/home_line"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_shipin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:drawableTop="@mipmap/home_icon_shipin"
+            android:gravity="center"
+            android:text="视频学习"
+            android:textColor="@color/text_maincolor"
+            android:textSize="12sp"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/home_line"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_quanzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin"
+            android:drawableTop="@mipmap/home_icon_shequ"
+            android:gravity="center"
+            android:text="意见反馈"
+            android:textColor="@color/text_maincolor"
+            android:textSize="12sp"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

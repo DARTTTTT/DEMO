@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bar_height">48dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="tab_height">45dp</dimen>
+    <dimen name="cardelevation">5dp</dimen>
+    <dimen name="viewheight">8dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="switch_20">20dp</dimen>
+    <dimen name="my_bar_height">130dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="radio_textsize">17sp</dimen>
+    <dimen name="main_title_size">20sp</dimen>
+    <dimen name="my_menu_height">55dp</dimen>
+    <dimen name="home_bg_corner">5dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="o_user_barheight">45dp</dimen>
+    <dimen name="o_title_size">17sp</dimen>
+    <dimen name="o_edit_size">15sp</dimen>
+    <dimen name="o_handicap_height">38dp</dimen>
+</resources>

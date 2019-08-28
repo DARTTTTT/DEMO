@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_head_white"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_camera"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="相机拍摄"
+            android:textColor="@color/text_maincolor"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_maincolor"/>
+        <TextView
+            android:id="@+id/text_album"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="相册选取"
+            android:textColor="@color/text_maincolor"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewheight"
+            android:background="@color/background_maincolor"/>
+
+        <TextView
+            android:id="@+id/text_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="取消"
+            android:textColor="@color/maincolor"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

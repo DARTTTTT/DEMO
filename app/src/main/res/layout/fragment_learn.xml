@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<!--1-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line"
+                    android:text="1、什么是期货？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="　所谓期货，一般指期货合约，就是指由期货交易所统一制定的、规定在将来某一特定的时间和地点交割一定数量标的物的标准化合约。这个标的物，又叫基础资产，对期货合约所对应的现货，可以是某种商品，如铜或原油，也可以是某个金融工具，如外汇、债券，还可以是某个金融指标，如三个月同业拆借利率或股票指数。期货合约的买方，如果将合约持有到期，那么他有义务买入期货合约对应的标的物；而期货合约的卖方，如果将合约持有到期，那么他有义务卖出期货合约对应的标的物（有些期货合约在到期时不是进行实物交割而是结算差价，例如股指期货到期就是按照现货指数的某个平均来对在手的期货合约进行最后结算）。当然期货合约的交易者还可以选择在合约到期前进行反向买卖来冲销这种义务。
+　　广义的期货概念还包括了交易所交易的期权合约。大多数期货交易所同时上市期货与期权品种。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+<!--2-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line2"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line2"
+                    android:text="2、期货有哪些种类？什么是股指期货？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="期货可以大致分为两大类，商品期货与金融期货。商品期货中主要品种可以分为农产品期货、金属期货（包括基础金属与贵金属期货）、能源期货三大类；金融期货中主要品种可以分为外汇期货、利率期货（包括中长期债券期货和短期利率期货）和股指期货。所谓股指期货，就是以股票指数为标的物的期货。双方交易的是一定期限后的股票指数价格水平，通过现金结算差价来进行交割。
+　　
+
+期 货	商品期货	农产品期货
+金属期货（基础金属期货、贵金属期货）
+能源期货
+金融期货	外汇期货
+利率期货（中长期债券期货、短期利率期货）"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+<!--3-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line3"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line3"
+                    android:text="3、股指期货与股票相比，有哪些不同点？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="股指期货与股票相比，有几个非常鲜明的特点，这对股票投资者来说尤为重要：
+　　（1）、期货合约有到期日，不能无限期持有。
+　　股票买入后可以一直持有，正常情况下股票数量不会减少。但股指期货都有固定的到期日，到期就要摘牌。因此交易股指期货不能象买卖股票一样，交易后就不管了，必须注意合约到期日，以决定是提前了结头寸，还是等待合约到期（好在股指期货是现金结算交割，不需要实际交割股票），或者将头寸转到下一个月。
+　　（2）、期货合约是保证金交易，必须每天结算
+　　 股指期货合约采用保证金交易，一般只要付出合约面值约10-15%的资金就可以买卖一张合约，这一方面提高了盈利的空间，但另一方面也带来了风险，因此必须每日结算盈亏。买入股票后在卖出以前，账面盈亏都是不结算的。但股指期货不同，交易后每天要按照结算价对持有在手的合约进行结算，账面盈利可以提走，但账面亏损第二天开盘前必须补足（即追加保证金）。而且由于是保证金交易，亏损额甚至可能超过你的投资本金，这一点和股票交易不同。
+　　 （3）、期货合约可以卖空
+　　股指期货合约可以十分方便地卖空，等价格回落后再买回。股票融券交易也可以卖空，但难度相对较大。当然一旦卖空后价格不跌反涨，投资者会面临损失。
+　　 （4）、市场的流动性较高。
+　　有研究表明,指数期货市场的流动性明显高于股票现货市场。如在1991年,FTSE-100指数期货交易量就已达850亿英镑。
+　　 （5）、股指期货实行现金交割方式
+　　 期指市场虽然是建立在股票市场基础之上的衍生市场,但期指交割以现金形式进行,即在交割时只计算盈亏而不转移实物,在期指合约的交割期投资者完全不必购买或者抛出相应的股票来履行合约义务,这就避免了在交割期股票市场出现“挤市”的现象。
+　　 （6）、一般说来,股指期货市场是专注于根据宏观经济资料进行的买卖,而现货市场则专注于根据个别公司状况进行的买卖。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--4-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line4"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line4"
+                    android:text="4、股指期货有哪些用途？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="　 股指期货主要用途之一是对股票投资组合进行风险管理。股票的风险可以分为两类，一类是与个股经营相关的非系统性风险，可以通过分散化投资组合来分散。另一类是与宏观因素相关的系统性风险，无法通过分散化投资来消除，通常用贝塔系数来表示。例如贝塔值等于1，说明该股或该股票组合的波动与大盘相同，如贝塔值等于1.2说明该股或该股票组合波动比大盘大20%，如贝塔值等于0.8，则说明该股或该组合的波动比大盘小20%。通过买卖股指期货，调节股票组合的贝塔系数，可以降低甚至消除组合的系统性风险。
+
+　　 另一个主要用途是可以利用股指期货进行套利。所谓套利，就是利用股指期货定价偏差，通过买入股指期货标的指数成分股并同时卖出股指期货，或者卖空股指期货标的指数成分股并同时买入股指期货，来获得无风险收益。套利机制可以保证股指期货价格处于一个合理的范围内，一旦偏离，套利者就会入市以获取无风险收益，从而将两者之间的价格拉回合理的范围内。
+
+　　此外，股指期货还可以作为一个杠杆性的投资工具。由于股指期货保证金交易，只要判断方向正确，就可能获得很高的收益。例如如果保证金为10%，买入1张沪深300指数期货，那么只要股指期货涨了5%，就可获利50%，当然如果判断方向失误，期指不涨反跌了5%，那么投资者将亏损本金的50%。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--5-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line5"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line5"
+                    android:text="5、股指期货是怎样定价的？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="对股票指数期货进行理论上的定价，是投资者做出买入或卖出合约决策的重要依据。股指期货实际上可以看作是一种证券的价格，而这种证券就是这上指数所涵盖的股票所构成的投资组合。
+　　同其它金融工具的定价一样，股票指数期货合约的定价在不同的条件下也会出现较大的差异。但是有一个基本原则是不变的，即由于市场套利活动的存在，期货的真实价格应该与理论价格保持一致，至少在趋势上是这产的。
+
+　　为说明股票指数期货合约的定价原理，我们假设投资者既进行股票指数期货交易，同时又进行股票现货交易，并假定:
+　　（1）、投资者首先构造出一个与股市指数完全一致的投资组合(即二者在组合比例、股指的'价值'与股票组合的市值方面都完全一致)；
+　　（2）、投资者可以在金融市场上很方便地借款用于投资；
+　　（3）、卖出一份股指期货合约；
+　　（4）、持有股票组合至股指期货合约的到期日，再将所收到的所有股息用于投资；
+　　（5）、在股指期货合约交割日立即全部卖出股票组合；
+　　（6）、对股指期货合约进行现金结算；
+　　（7）、用卖出股票和平仓的期货合约收入来偿还原先的借款。
+　　假定在1999年10月27日某种股票市场指数为2669.8点，每个点'值'25美元，指数的面值为66745美元，股指期货价格为2696点，股息的平均收益率为3.5%；2000年3月到期的股票指数期货价格为2696点，期货合约的最后交易日为2000年的3月19日，投资的持有期为143天，市场上借贷资金的利率为6%。再假设该指数在5个月期间内上升了，并且在3月19日收盘时收在2900点，即该指数上升了8.62%。这时，按照我们的假设，股票组合的价值也会上升同样的幅度，达到72500美元。
+
+　　按照期货交易的一般原理，这位投资者在指数期货上的投资将会出现损失，因为市场指数从2696点的期货价格上升至2900点的市场价格，上升了204点，则损失额是5100美元。
+
+　　然而投资者还在现货股票市场上进行了投资，由于股票价格的上升得到的净收益为(72500-66745)=5755美元，在这期间获得的股息收入大约为915.2美元，两项收入合计6670.2美元。
+　　再看一下其借款成本。在利率为6%的条件下，借得66745美元，期限143天，所付的利息大约是1569美元，再加上投资期货的损失5100美元，两项合计6669美元。
+
+　　在上述安全例中，简单比较一下投资者的盈利和损失，就会发现无论是投资于股指期货市场，还是投资于股票现货市场，投资者都没有获得多少额外的收益。换句话说，在上述股指期货价格下，投资者无风险套利不会成功，因此，这个价格是合理的股指期货合约价格。
+
+　　由此可见，对指数期货合约的定价(F)主要取决于三个因素:现货市场上的市场指数(I)、得在金融市场上的借款利率(R)、股票市场上股息收益率(D)。即:
+　　F=I+I×(R-D)=I×(1-R+D)
+　　其中R是指年利率，D是指年股息收益率，在实际的计算过程中，如果持有投资的期限不足一年，则相应的进行调整。
+　　现在我们顺过头来，用刚才给出股票指数期货价格公式计算在上例给定利率和股息率条件下的股指期货价格:
+　　F=2669.8+×(6%-3.5%)×143/365=2695.95
+　　同样需要指出的是，上面公式给出的是在前面假设条件下的指数期货合约的理论价格。在现实生活中要全部满足上述假设存在着一定的困难。因为首先，在现实生活中再高明的投资者要想构造一个完全与股市指数结构一致的投资组合几乎是不可能的，当证券市场规模越大时更是如此；其，在短期内进行股票现货交易，往往使得交易成本较大；第三，由于各国市场交易机制存在着差异，如在我国目前就不允许卖空股票，这在一定程度上会影响到指数期货交易的效率；第四，股息收益率在实际市场上是很难得到的，因为不同的公司、不同的市场在股息政策上(如发放股息的时机、方式等)都会不同，并且股票指数中的每只股票发放股利的数量和时间也是不确定的，这必然影响到正确判定指数期货合约的价格。
+
+　　从国外股指期货市场的实践来看，实际股指期货价格往往会偏离理论价格。当实际股指期货价格大于理论股指期货价格时，投资者可以通过买进股指所涉及的股票，并卖空股指期货而牟利；反之，投资者可以通过上述操作的反向操作而牟利。这种交易策略称作指数套利(IndexArbitrage)。然而，在成离市场中，实际股指期货价格和理论期货价格的偏离，总处于一定的幅度内。例如，美国S P500指数期货的价格，通常位于其理论值的上下0.5%幅度内，这就可以在一定程度上避免风险套利的情况。
+
+　　对于一般的投资者来说，只要了解股指期货价格与现货指数、无风险利率、红利率、到期前时间长短有关。股指期货的价格基本是围绕现货指数价格上下波动，如果无风险利率高于红利率，则股指期货价格将高于现货指数价格，而且到期时间越长，股指期货价格相对于现货指数出现升水幅度越大；相反，如果无风险利率小于红利率，则股指期货价格低于现货指数价格，而且到期时间越长，股指期货相对与现货指数出现贴水幅度越大。
+
+　　以上所说的是股指期货的理论价格。但实际上由于套利是有成本的，因此股指期货的合理价格实际是围绕股票指数现货价格的一个区间。只有在价格落到区间以外时，才会引发套利。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+
+            <!--6-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line6"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line6"
+                    android:text="6、股指期货的交易是如何进行的？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="期货交易历史上是在交易大厅通过交易员的口头喊价进行的。目前大多数期货交易是通过电子化交易完成的，交易时，投资者通过期货公司的电脑系统输入买卖指令，由交易所的撮合系统进行撮合成交。
+
+　　买卖期货合约的时候，双方都需要向结算所缴纳一小笔资金作为履约担保，这笔钱叫做保证金。首次买入合约叫建立多头头寸，首次卖出合约叫建立空头头寸。然后，手头的合约要进行每日结算，即逐日盯市。
+
+　　建立买卖头寸（术语叫开仓）后不必一直持有到期，在股指期货合约到期前任何时候都可以做一笔反向交易，冲销原来的头寸，这笔交易叫平仓。如第一天卖出10手股指期货合约，第二天又买回10手合约。那么第一笔是开仓10手股指期货空头，第二笔是平仓10手股指期货空头。第二天当天又买入20手股指期货合约，这时变成开仓20手股指期货多头。然后再卖出其中的10手，这时叫平仓10手股指期货多头，还剩10手股指期货多头。一天交易结束后手头没有平仓的合约叫持仓。这个例子里，第一天交易后持仓是10手股指期货空头，第二天交易后持仓是10手股指期货多头。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+            <!--7-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/stay_line7"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/stay_line7"
+                    android:text="7、股指期货的怎么结算的？"
+                    android:textColor="@color/text_maincolor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_qh7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="股指期货的结算可以大致分为两个层次：首先是结算所或交易所的结算部门对会员结算，然后是会员对投资者结算。不管那个层次，都需要做三件事情：
+　　（1）、交易处理和头寸管理，就是每天交易后要登记做了哪几笔交易，头寸是多少。
+　　（2）、财务管理，就是每天要对头寸进行盈亏结算，盈利部分退回保证金，亏损的部分追缴保证金。
+　　（3）、风险管理，对结算对象评估风险，计算保证金。
+　　 其中第二部分工作中，需要明确结算的基准价，即所谓的结算价，一般是指期货合约当天临收盘附近一段时间的均价（也有直接用收盘价作为结算价的）。持仓合约用其持有成本价与结算价比较来计算盈亏。而平仓合约则用平仓价与持有成本价比较计算盈亏。对于当天开仓的合约，持有成本价等于开仓价，对于当天以前开仓的历史合约，其持有成本价等于前一天的结算价。因为每天把账面盈亏都已经结算给投资者了，因此当天结算后的持仓合约的成本价就变成当天的结算价了，因此和股票的成本价计算不同，股指期货的持仓成本价每天都在变。
+　　有了结算所，从法律关系上说，股指期货不是在买卖双方之间直接进行，而由结算所成为中央对手方，即成为所有买方的唯一卖方，和所有卖方的唯一买方。结算所以自有资产担保交易履约。"
+                android:textColor="@color/text_maincolor"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

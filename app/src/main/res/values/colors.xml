@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#5576F7</color>
+    <color name="bar_color">#8A5DED</color>
+
+    <color name="maincolor">#5D81D8</color>
+    <color name="tranmaincolor">#AEBCF3</color>
+
+    <color name="deepmaincolor">#6320DE</color>
+
+    <color name="stock_index_red">#E83A3A</color>
+    <color name="stock_index_green">#279D1B</color>
+    <color name="place_holder">#e6e6e6</color>
+
+
+    <color name="tab_color">#242424</color>
+    <color name="tab_color_normal">#999999</color>
+
+    <color name="redcolor">#FF566C</color>
+    <color name="greencolor">#0FBD97</color>
+    <color name="second_color">#FF333333</color>
+
+    <color name="home_line">#E0E0E0</color>
+    <color name="text_maincolor">#2E3546</color>
+    <color name="text_secondcolor">#FF999999</color>
+
+    <color name="text_notice">#243C54</color>
+
+    <color name="half_transparent_black">#aa434749</color>
+    <color name="half_transparent_white">#4DFFFFFF</color>
+
+    <color name="gray0">#EDEBEB</color>
+    <color name="purple01">#9933CC</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background_maincolor">#F8F8F8</color>
+    <color name="text_1A">#1A1A1A</color>
+    <color name="text_4D">#4D4D4D</color>
+
+    <color name="cardview_dark_background">#FF424242</color>
+    <color name="cardview_light_background">#FFFFFFFF</color>
+    <color name="cardview_shadow_end_color">#03000000</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="text_66">#666666</color>
+    <color name="text_c2">#C2C2C2</color>
+    <color name="radio_back_color">#FF1C2242</color>
+    <color name="stock_bg_color">#FF1C2242</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_fc">#FCFCFC</color>
+    <color name="text_login_tab">#B2B2BA</color>
+    <color name="o_line_user">#959DAE</color>
+    <color name="o_text_second_color">#959DAE</color>
+    <color name="o_text_maincolor">#343348</color>
+    <color name="o_light_maincolor">#2299F1</color>
+    <color name="o_text_shezhi">#797E89</color>
+    <color name="o_text_info">#343348</color>
+    <color name="o_text_b2b6c1">#B2B6C1</color>
+    <color name="o_text_hint_color">#677085</color>
+    <color name="o_text_5c5e76">#5C5E76</color>
+    <color name="o_text_3433">#343348</color>
+    <color name="o_market_gray">#B2B6C1</color>
+    <color name="o_text_8289">#82899C</color>
+    <color name="o_text_chichang">#B4B7BF</color>
+    <color name="o_text_f77">#F77406</color>
+    <color name="o_text_ff56">#FF566C</color>
+    <color name="o_text6f8c">#6F8CFF</color>
+    <color name="o_text_1292">#1292F0</color>
+    <color name="o_text_7d85">#7D8596</color>
+    <color name="o_text_636e">#636E7F</color>
+    <color name="o_text_ec49">#EC4949</color>
+    <color name="o_text_ec40">#EC4040</color>
+    <color name="o_text_6770">#677085</color>
+    <color name="o_text_b3ba">#B3BAC8</color>
+    <color name="o_text_ffef">#FFEF5A</color>
+    <color name="o_text_ff00">#FF000C</color>
+    <color name="o_text_4960">#4960cd</color>
+    <color name="o_text_3c3f">#3C3F4F</color>
+    <color name="o_text_3red">#07EB3D3D</color>
+    <color name="o_text_3green">#07009C41</color>
+
+
+    <color name="o_bar_white">#ffffff</color>
+    <color name="o_market_bg">#F8F8F8</color>
+    <color name="o_line">#E0E0E0</color>
+    <color name="o_text_2d2ef">#2D2E2F</color>
+    <color name="o_bar_f0f1">#F0F1F4</color>
+    <color name="o_text_001c">#00001C</color>
+    <color name="o_f8f3">#F8F3F3</color>
+    <color name="o_f0f6">#F0F6F5</color>
+    <color name="o_text_3433_white">#343348</color>
+    <color name="o_text_959d">#959DAE</color>
+    <color name="o_ebec">#EBECEF</color>
+    <color name="o_807d">#807DFC</color>
+    <color name="o_text_dede">#dedede</color>
+    <color name="o_text_f5fa">#ffdd00</color>
+    <color name="o_text_ff6c">#ff6c00</color>
+
+</resources>

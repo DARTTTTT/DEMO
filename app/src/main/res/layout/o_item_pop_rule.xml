@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/o_bar_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/o_superback_deep" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交易规则"
+            android:textColor="@color/o_text_3433"
+            android:textSize="@dimen/o_title_size"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/o_line"
+        android:visibility="visible" />
+
+    <com.ltqh.qh.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易品种"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="17sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:text="交易品种"
+                    android:textColor="@color/o_text_f77"
+                    android:textSize="15sp"
+
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center">
+
+                <TextView
+                    android:id="@+id/text_coin_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货币单位:人民币"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center">
+
+                <TextView
+                    android:id="@+id/text_trade_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易单位:每手10吨"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center">
+
+                <TextView
+                    android:id="@+id/text_min_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最小波动:1元一吨"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="波动盈亏: "
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_change_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="波动一次=10元"
+                    android:textColor="@color/o_text_ff56"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易时间: "
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_buy_sell_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[买入时间]上午09:15:00-12:00:00\n上午09:15:00-12:00:00\n上午09:15:00-12:00:00"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清仓时间: "
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_clean_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="白天 16:25:00  夜间 00:55:00"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易综合费: "
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_all_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="138元/手"
+                    android:textColor="@color/o_text_ff56"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_exchange_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="汇率:1美元=0.88人民币（汇率波动比较大时，将进行调整）"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="@dimen/margin"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="港交所恒指期货，每股50港元，最小波动1点（相当于最小波动盈亏人民币44元，可买涨买跌。）"
+                    android:textColor="@color/o_text_2d2ef"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_todo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="一分钟了解如何交易"
+                    android:textColor="@color/o_text_ff56"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:background="@color/o_market_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_xinshou"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="新手练习"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_xinshou"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="如果您是新手，没有交易经验，建议您到模拟练习区进行模拟交易。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+                    <TextView
+                        android:id="@+id/text_moni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="进入模拟练习区"
+                        android:textColor="@color/o_text_ff56" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="什么是买涨?"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当您买涨时，价格涨了你就赚钱，跌了亏钱。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:visibility="gone"
+
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="什么是买跌?"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当您买跌时，价格跌了你就赚钱，涨了亏钱。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:visibility="gone"
+
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_zhiyin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="什么是止盈?"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_zhiyin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当单笔交易盈利金额出发（多于等于）指定的止盈金额时，这笔交易会被强制平仓。由于市场的价格实时都在变动，不保证平仓后最终盈利金额一定大于止损金额，有可能会小于触发金额。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_zhisun"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="什么是止损?"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_zhisun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当单笔交易亏损金额触发（多于等于）指定的止损金额时，这笔交易会被强制平仓。由于市场的价格实时都在变动，不保证卖出后最终亏损金额一定小于等于止损金额，有可能会大于止损金额。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_chicang"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="什么是持仓时间?"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_chicang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/text_chicangtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美黄金期货最后持仓时间：次日04:55:00"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:visibility="gone"
+
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_dazahng"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="大涨大跌交易限制"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_dazhang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/text_dazhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易品种涨幅≥20%时禁止买跌，跌幅≥20%时禁止买涨。交易品种涨幅≥30%时持仓中买跌的交易全部强制平仓，跌幅≥30%时持仓中买涨的交易强制平台。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:visibility="gone"
+
+                android:layout_marginRight="@dimen/margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_jiaoyizonghefei"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="交易综合费"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_jiaoyizonghefei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/text_jiaoyizonghefei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美黄金期货每手"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_lvyuebaozhangjin"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="履约保证金"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_lvyuebaozhenjin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="履约保证金为操盘手委托平台冻结用于履行交易亏损赔付义务的保证金。操盘手以冻结的履约保证金作为承担交易亏损赔付的上限。多出上限部分的亏损全部由合作的投资人承担。
+合作交易结束后，根据清结算结果，如交易盈利，操盘手冻结的履约保证金全额退还。如交易亏损，从冻结的履约保证金中，扣减操盘手所应承担的亏损赔付额，扣减后余额退还。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewheight"
+                android:visibility="gone"
+
+                android:background="@color/o_market_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:visibility="gone"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_yinliruhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="盈利如何分配"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="15sp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/img_arrow10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/arrow" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/stay_yinliruhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="盈利100%归操盘手所有，投资人不参与盈利分成。"
+                        android:textColor="@color/o_text_2d2ef" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.ltqh.qh.view.MyScrollView>
+
+
+</LinearLayout>

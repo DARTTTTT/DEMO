@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/o_bar_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@mipmap/o_superback_deep" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交易"
+            android:textColor="@color/o_text_3433"
+            android:textSize="@dimen/o_title_size"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/o_line"
+        android:visibility="visible" />
+
+    <com.ltqh.qh.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="----"
+                        android:textColor="@color/o_text_2d2ef"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/text_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin"
+                        android:layout_toRightOf="@+id/text_name"
+                        android:text="持仓至----自动平仓"
+                        android:textColor="@color/o_text_f77"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/img_money_type"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/o_yuanmoshi"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="即时开仓"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_lastprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="----"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:gravity="center"
+                        android:text="交易数量"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingRight="@dimen/margin_15"
+                        android:text="更多"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="1手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="2手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="5手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_4"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="10手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_5"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="15手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/radio_6"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_volume"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="20手"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="15sp"
+
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:layout_weight="1"
+
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="触发止损(元)"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/profit1"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_green"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="11sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/profit2"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_green"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="11sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/profit3"
+
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_green"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="11sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/profit4"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_green"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="11sp"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/profit5"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:layout_weight="1"
+                        android:background="@drawable/o_tab_green"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textColor="@color/sel_white_volume"
+                        android:textSize="11sp"
+
+                        />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="触发止盈"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:gravity="center|right"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_stopprofit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="--"
+                            android:textColor="@color/redcolor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="@color/o_text_3433"
+                            android:textSize="15sp"
+
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text_stop_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="@color/o_text_3433"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="支付>交易综合费"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_coin_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/greencolor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:text="冻结>履约保障金"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_lvyue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/greencolor"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/o_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_shipan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/layout_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:text="汇率"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/text_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一美元=7.2"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:textColor="@color/o_text_3433"
+
+                        />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/o_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="红包抵综合交易费"
+                            android:layout_marginLeft="@dimen/margin_15"
+                            android:textColor="@color/o_text_3433"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/text_jifen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="总红包余额"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:textColor="@color/o_text_3433"
+
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/o_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_centerVertical="true"
+                        android:text="已关闭红包抵用,如需使用请打开"
+                        android:textColor="@color/o_text_3433"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/img_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/o_close_btn"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_15"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.ltqh.qh.view.MyScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/o_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:text="可用余额:"
+            android:textColor="@color/o_text_3433"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:text="--"
+            android:textColor="@color/o_text_3433"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@drawable/o_bg_home_yellow"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_5"
+            android:paddingRight="@dimen/margin_5"
+            android:text="充值"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/o_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:text="合计支付:"
+                android:textColor="@color/o_text_2d2ef"
+                android:textSize="15sp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:text="----"
+                android:textColor="@color/redcolor"
+                android:textSize="15sp"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/o_bg_green"
+            android:padding="10dp"
+            android:text="确定买空"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

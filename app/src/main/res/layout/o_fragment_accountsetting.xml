@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/new_order_bg_white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layout_shiming"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/o_my_icon1"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="实名认证"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_isshiming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂未实名"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_bank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/o_my_icon2"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="提款银行卡"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_isbank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定银行卡"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/o_my_icon3"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="手机绑定"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已绑定"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+
+            <RelativeLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/my_icon_tikuan"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="提款密码"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/text_ispass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未设置"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/new_order_bg_white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/layout_loginpass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/o_my_icon_pass"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="登录密码"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="去修改"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@color/o_line"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/layout_changename"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_menu_height"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:drawableLeft="@mipmap/o_my_icon_xiugaiyonghuming"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="修改用户名"
+                    android:textColor="@color/o_text_3433"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_changename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="只能修改一次"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textColor="@color/o_text_8289"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/arrow"
+                    android:drawablePadding="@dimen/margin"
+                    android:layout_marginRight="@dimen/margin_15"
+                    />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
