@@ -30,7 +30,6 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.X509TrustManager;
 
-import cn.bmob.v3.Bmob;
 import cn.jpush.android.api.JPushInterface;
 import okhttp3.OkHttpClient;
 import skin.support.SkinCompatManager;
@@ -74,14 +73,9 @@ public class AppContext extends Application {
         //mmkv
         MMKV.initialize(this);
 
-
         UMConfigure.init(this, AppConfig.STAY_UM_KEY, null, UMConfigure.DEVICE_TYPE_PHONE, null);
 
 
-        AVOSCloud.initialize(this, AppConfig.STAY_X_LC_ID, AppConfig.STAY_X_LC_KEY);
-        AVOSCloud.setDebugLogEnabled(true);
-        //第一：默认初始化
-        Bmob.initialize(this, AppConfig.STAY_X_BMOB_REST_API_KEY);
         mContext = this;
 
 
