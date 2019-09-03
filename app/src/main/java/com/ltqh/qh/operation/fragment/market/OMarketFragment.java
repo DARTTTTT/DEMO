@@ -91,7 +91,7 @@ protected int setLayoutResourceID() {
         home_tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab.getPosition() == 1) {
+                if (tab.getPosition() == 0) {
                     text_edit.setVisibility(View.VISIBLE);
 
                 } else {
