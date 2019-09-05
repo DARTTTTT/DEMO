@@ -356,9 +356,7 @@ public class SplashActivity extends Activity {
                         if (!TextUtils.isEmpty(response.body())) {
                             try {
                                 String decrypt = AES.Decrypt(response.body().getBytes(), KEY);
-                                Log.d("print", "onSuccess:解密后数据1: " + decrypt);
                                 JsonEntity jsonEntity = new Gson().fromJson(decrypt, JsonEntity.class);
-                                Log.d("print", "onSuccess:131 1: " + jsonEntity);
                                 SPUtils.putData(OUserConfig.CHECKVERSION, jsonEntity);
 
                                 if (jsonEntity.getStatus().equals("true") || jsonEntity.getStatus().equals("1")) {
